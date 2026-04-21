@@ -1,45 +1,45 @@
 class Supersigil < Formula
   desc "CLI tool and verification framework for spec-driven development"
   homepage "https://github.com/jonisavo/supersigil"
-  version "0.12.0"
+  version "0.13.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/jonisavo/supersigil/releases/download/v0.12.0/supersigil-0.12.0-aarch64-apple-darwin.tar.gz"
-      sha256 "42f9f43ce734378fa0784bddd98141f43d6d09c1d75335b164b9e9290ae6458f"
+      url "https://github.com/jonisavo/supersigil/releases/download/v0.13.0/supersigil-0.13.0-aarch64-apple-darwin.tar.gz"
+      sha256 "fde7c19364aa3a448e784f378bedc306735f6f6761cac37fe3877ff38255a252"
 
       resource "supersigil-lsp" do
-        url "https://github.com/jonisavo/supersigil/releases/download/v0.12.0/supersigil-lsp-0.12.0-aarch64-apple-darwin.tar.gz"
-        sha256 "2835ed403f3628750c6cefa9115fb05cda9f6ff395f8d225e7d735734b1d5921"
+        url "https://github.com/jonisavo/supersigil/releases/download/v0.13.0/supersigil-lsp-0.13.0-aarch64-apple-darwin.tar.gz"
+        sha256 "402b66bc3ab8a726ebfaa4a573520daabbe04772bedfb8b83d86eb61a5cf1a31"
       end
     else
-      url "https://github.com/jonisavo/supersigil/releases/download/v0.12.0/supersigil-0.12.0-x86_64-apple-darwin.tar.gz"
-      sha256 "fc66ced832ff84f0ec44e507cea26834040c7d0b4ca6316b51e9f4c0442fabba"
+      url "https://github.com/jonisavo/supersigil/releases/download/v0.13.0/supersigil-0.13.0-x86_64-apple-darwin.tar.gz"
+      sha256 "4017cf8ce4cdfc250aa4f3ffcf7717319331f048cccc32a39126fa17ab22c3f2"
 
       resource "supersigil-lsp" do
-        url "https://github.com/jonisavo/supersigil/releases/download/v0.12.0/supersigil-lsp-0.12.0-x86_64-apple-darwin.tar.gz"
-        sha256 "92dc27189dc534c90fb5e9285b951954317939af53f19ac5abc3333c619dda18"
+        url "https://github.com/jonisavo/supersigil/releases/download/v0.13.0/supersigil-lsp-0.13.0-x86_64-apple-darwin.tar.gz"
+        sha256 "d001f7c3f2d470caec064c1aec127557398e644fdbb1930ffa4154a94e0bfe40"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/jonisavo/supersigil/releases/download/v0.12.0/supersigil-0.12.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "c154c9ea9d24cd3304025377bafe2b2394735174d73d39305cea74edb230f897"
+      url "https://github.com/jonisavo/supersigil/releases/download/v0.13.0/supersigil-0.13.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "5dd98a86087db9b83944ba8a51d028921bf329851d91379318cabaf7d7ff2a75"
 
       resource "supersigil-lsp" do
-        url "https://github.com/jonisavo/supersigil/releases/download/v0.12.0/supersigil-lsp-0.12.0-aarch64-unknown-linux-musl.tar.gz"
-        sha256 "92bcb674ea3767dc6a9f88eddbf1739509db018cb52689f4ede9d4648ac4597f"
+        url "https://github.com/jonisavo/supersigil/releases/download/v0.13.0/supersigil-lsp-0.13.0-aarch64-unknown-linux-musl.tar.gz"
+        sha256 "d878f0ef2eba0fcf2110205e82f0cee0abe3d2045a1cc88a4f5b73a257bada71"
       end
     else
-      url "https://github.com/jonisavo/supersigil/releases/download/v0.12.0/supersigil-0.12.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "34dbbaa20b859adb52b3eed227ce97c14a4984a1c5b951868e5a17b7409657e2"
+      url "https://github.com/jonisavo/supersigil/releases/download/v0.13.0/supersigil-0.13.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "4982f79339fe0e99532a099b0cbe7f2cf2d9d658e8f4243872d7008ce813ea8e"
 
       resource "supersigil-lsp" do
-        url "https://github.com/jonisavo/supersigil/releases/download/v0.12.0/supersigil-lsp-0.12.0-x86_64-unknown-linux-musl.tar.gz"
-        sha256 "f6c9cfa4587ba68ef0d8d9fb26a204d2486247832da54d181b2214bc2d63d98a"
+        url "https://github.com/jonisavo/supersigil/releases/download/v0.13.0/supersigil-lsp-0.13.0-x86_64-unknown-linux-musl.tar.gz"
+        sha256 "91e3dc2797c5a724cbfcdca17f84e39013b39ed30fd08ea8ca3adffba59e5187"
       end
     end
   end
